@@ -43,6 +43,20 @@ header, main{
     font-size: medium;
 
 }
+.banner-heading-container h1{
+    font-weight: 700;
+    font-size: 3rem;
+}
+.banner-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.banner-heading-container{
+    padding-right: 8rem;
+}
 
 /* Responsive design starts here  */
 @media screen and (max-width: 576px) {
@@ -51,6 +65,18 @@ header, main{
     }
     .menu-bar ul li.cart-item {
         display: flex;
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .banner-img-container img{
+        max-width: 100%;
+    }
+    .banner-heading-container{
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
     }
     
 }
