@@ -81,6 +81,7 @@ header, main{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     row-gap: 1rem;
+    margin-bottom: 3rem;
  }
  
  
@@ -125,6 +126,7 @@ header, main{
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 0.2rem;
         width: 100%;
+        overflow: hidden;
  }
  
 
