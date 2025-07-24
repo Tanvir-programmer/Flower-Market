@@ -1,0 +1,56 @@
+/* font styles  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+.noto-serif-simple {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+body {
+    background-color: rgb(245, 248, 255);
+}
+/* shared style  */
+header, main{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.text-color{
+    color: #8987A1;
+}
+
+/* header section starts here  */
+
+.navbar-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar-container ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5rem;
+    list-style: none;
+}
+.navbar-container ul a{
+    text-decoration: none;
+}
+.first-child {
+    font-weight: 700;
+    color: rgb(62, 61, 74);
+    font-size: medium;
+
+}
+
+/* Responsive design starts here  */
+@media screen and (max-width: 576px) {
+    .menu-bar ul li {
+        display: none;
+    }
+    .menu-bar ul li.cart-item {
+        display: flex;
+    }
+    
+}
