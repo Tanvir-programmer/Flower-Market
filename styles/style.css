@@ -330,7 +330,7 @@ footer{
     .btn-primary,
     .card h3 {
          width: 40vw;
-        max-width: 200px; /* or your preferred size */
+         max-width: 200px; 
     }
     .banner-heading-container{
         text-align: start;
