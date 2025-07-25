@@ -33,6 +33,7 @@ header, main{
 
 }
 
+
 /* header section starts here  */
 
 .navbar-container{
@@ -216,6 +217,67 @@ header, main{
     padding: 0;
     background: none;
 }
+/* Contact section starts here  */
+.contact-container{
+    width: 100%;
+    margin-top: 4rem;
+    height: 300px;
+    background-image: url(../assets/news-letter-bg.png);
+}
+.contact-header{
+    color: white;
+}
+form{
+    display: flex;
+}
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    flex-wrap: wrap;
+}
+.contact-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.contact-container input[type="email"] {
+    width: 600px;
+    max-width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.contact-container button{
+    background-color:#e95a08;
+    color: white;
+    font-weight: 700;
+    width: 150px;
+    border: none;
+}
+/* footer section starts here  */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-section,.menu-section2{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menu-section li,.menu-section2 li{
+    list-style: none;
+    color: #6B7280;
+}
+.social-media-section{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items:center;
+    margin-bottom: 150px;
+}
+
 /* Responsive design starts here  */
 @media screen and (max-width: 576px) {
     .menu-bar ul li {
@@ -262,7 +324,7 @@ header, main{
         max-width: 200px; /* or your preferred size */
     }
     .banner-heading-container{
-        text-align: left;
+        text-align: start;
     }
     .badge{
         display: none;
@@ -315,5 +377,37 @@ header, main{
         object-fit: cover;
         border-radius: 0.5rem;
     }
+     .contact-container input[type="email"] {
+        width: 300px;
+    }
+    .contact-container form {
+        align-items: stretch;
+    }
+    .contact-container button {
+        width: 100%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: flex-start; /* Change from left to flex-start */
+        text-align: left;        /* Ensure text is left-aligned */
+    }
+    .menu-section,
+    .menu-section2
+    {
+        margin-bottom: 1rem;
+    }
+    .menu-section,
+    .menu-section2,
+    .social-media-section,
+    .logo-section {
+        align-items: flex-start;
+        text-align: left;
+        width: 100%;
+    }
+    .social-media-section{
+        justify-content: flex-start;
+        align-items: center;
+    }
+    
 }
     
