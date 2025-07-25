@@ -131,6 +131,8 @@ header, main{
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 4.5rem;
 }
 .deals-img img{
     border-radius: 1rem;
@@ -141,29 +143,75 @@ header, main{
     justify-content: space-between;
     align-items: center;
     gap: 24px;
+    width: 33%;
+    border: 1px solid red;
 }
 .small-img, .big-img{
     height: 400px;
 }
 .big-img{
     width: 66%;
+    border: 1px solid tomato;
     
 }
-.img-text{
-    background-image: url(../assets/deal-zabo.png);
-    height: 100%;
+.img-text1{
+    background-image: url(../assets/deal-bloom.png);
+    height: 50%;
+    width: 100%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+.img-text2{
+    background-image: url(../assets/deal-ana.png);
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+.img-text3{
+    background-image: url(../assets/deal-zabo.png);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-repeat: no-repeat;
     border-radius: 1rem;
     
 }
-.img-text h2{
+.img-text1 h3, .img-text2 h3{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.img-text3 h2{
     color: white;
     font-weight: 700;
     font-size: 34px;
+}
+.img-text1 a, .img-text2 a{
+    color: white;
+    font-weight: bold;
+
+}
+.img-text3 a{
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+}
+.badge{
+    border: 1px solid rebeccapurple;
+    width: 50px;
+    height: 26px;
 }
 /* Responsive design starts here  */
 @media screen and (max-width: 576px) {
@@ -203,11 +251,22 @@ header, main{
  {
     width: 200px;
  }
+ .banner-heading-container{
+    text-align: left;
+ }
  .badge{
     display: none;
  }
  .flower-lover-container{
     flex-direction: column;
+    width: 100%;
+ }
+ .deals-img{
+    flex-direction: column;
+ }
+ .big-img,
+ .small-img
+ {
     width: 100%;
  }
 
