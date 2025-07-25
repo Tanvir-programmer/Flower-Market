@@ -342,7 +342,9 @@ footer{
         flex-direction: column;
         width: 100%;
     }
-    
+    .flower-lover-text{
+        padding: 1rem;
+    }
   .flower-lover-container img {
     height: auto;
     max-width: 100%;
