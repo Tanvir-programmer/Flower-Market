@@ -387,13 +387,13 @@ footer{
         border-radius: 0.5rem;
     }
      .contact-container input[type="email"] {
-        width: 300px;
+        width: 65%;
     }
     .contact-container form {
         align-items: stretch;
     }
     .contact-container button {
-        width: 100%;
+        width: 35%;
     }
     footer {
         flex-direction: column;
