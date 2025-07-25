@@ -121,9 +121,13 @@ header, main{
  }
 .flower-lover-img {
     position: relative;
-    display: block;      /* or flex, but block is usually best for images */
-    width: fit-content;  /* ensures the container fits the image */
-    overflow: hidden;    /* hides any overflow from the badge */
+    display: block;      
+    width: fit-content;      
+}
+
+.flower-lover-img {
+    position: relative;
+    display: inline-block; 
 }
 
 .flower-lover-img img:first-child {
@@ -131,15 +135,20 @@ header, main{
     width: 100%;
     height: auto;
 }
-.flower-lover-img
-.badge {
+/* animation  */
+
+.flower-lover-img .badge {
     position: absolute;
     top: 0;
     right: 0;
-    height: 150px;  
-    width: 150px;    
+    width: 150px;
+    height: 150px;
     z-index: 2;
+    transform: translate(40%, -40%);
 }
+
+
+
 /* latest deal section styles starts here  */
 .deal-heading{
     text-align: center;
@@ -407,6 +416,7 @@ footer{
     .social-media-section{
         justify-content: flex-start;
         align-items: center;
+        margin-bottom: 0;
     }
     
 }
