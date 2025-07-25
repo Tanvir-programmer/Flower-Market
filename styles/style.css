@@ -86,7 +86,6 @@ header, main{
     margin-bottom: 3rem;
  }
  .card{
-    border: 2px solid aquamarine;
     margin: 0 auto;
  }
  
@@ -120,7 +119,17 @@ header, main{
     margin-bottom: 2rem;
  }
 /* latest deal section styles starts here  */
-
+.deal-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.deal-section img{
+    width: 100%;
+    height: 100%;
+}
+.img-small{
+    height: 50%;
+}
 /* Responsive design starts here  */
 @media screen and (max-width: 576px) {
     .menu-bar ul li {
@@ -152,38 +161,36 @@ header, main{
         grid-column-gap: 1rem;
         width: 100%;
         place-items: center;
- }
- .card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-sizing: border-box;
-}
-.card-container img,
-.btn-primary,
-.card h3 {
-    width: 100%;
-    max-width: 200px; /* or your preferred size */
-}
- .banner-heading-container{
-    text-align: left;
- }
- .badge{
-    display: none;
- }
- .flower-lover-container{
-    flex-direction: column;
-    width: 100%;
- }
- .deals-img{
-    flex-direction: column;
- }
- .big-img,
- .small-img
- {
-    width: 100%;
- }
-
+    }
+    .card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    .card-container img,
+    .btn-primary,
+    .card h3 {
+        width: 100%;
+        max-width: 200px; /* or your preferred size */
+    }
+    .banner-heading-container{
+        text-align: left;
+    }
+    .badge{
+        display: none;
+    }
+    .flower-lover-container{
+        flex-direction: column;
+        width: 100%;
+    }
+    .deals-img img{
+        flex-direction: column;
+    }
+    .big-img,
+    .small-img {
+        width: 100%;
+    }
 }
     
