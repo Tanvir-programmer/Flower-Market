@@ -172,7 +172,7 @@ header, main{
     .card-container img,
     .btn-primary,
     .card h3 {
-        width: 100%;
+         width: 40vw;
         max-width: 200px; /* or your preferred size */
     }
     .banner-heading-container{
@@ -185,6 +185,11 @@ header, main{
         flex-direction: column;
         width: 100%;
     }
+    
+  .flower-lover-container img {
+    height: auto;
+    max-width: 100%;
+}
     .deals-img img{
         flex-direction: column;
     }
